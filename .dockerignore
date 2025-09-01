@@ -1,0 +1,39 @@
+# Ignore build artifacts
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+# Ignore IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore Git files
+.git/
+.gitignore
+
+# Ignore Docker files (to avoid copying into image)
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore test coverage reports
+coverage/
+*.lcov
+
+# Ignore temporary files
+*.tmp
+*.temp
