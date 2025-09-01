@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "1f581a9b-3709-42d2-a39c-dc6bc2d2bf5e",
+		"name": "MigrosOne",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19518626"
+	},
+	"item": [
+		{
+			"name": "Log Courier Location (Ataşehir Migros)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": \"2025-08-30T10:00:00\",\n    \"courierId\": \"courier-1\",\n    \"lat\": 40.9923307,\n    \"lng\": 29.1244229\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/courier-location",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courier-location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log Courier Location (Ataşehir Migros) within 1 min",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": \"2025-08-30T10:00:30\",\n    \"courierId\": \"courier-1\",\n    \"lat\": 40.9923307,\n    \"lng\": 29.1244229\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/courier-location",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courier-location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log Courier Location (Novada Migros)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": \"2025-08-30T10:00:00\",\n    \"courierId\": \"courier-1\",\n    \"lat\": 40.986106,\n    \"lng\": 29.1161293\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/courier-location",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courier-location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log Courier Location Away From Stores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": \"2025-08-30T10:00:00\",\n    \"courierId\": \"courier-1\",\n    \"lat\": 41.0000000,\n    \"lng\": 29.0000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/courier-location",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courier-location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log Courier Location Invalid Coordinates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time\": \"2025-08-30T10:00:00\",\n    \"courierId\": \"courier-1\",\n    \"lat\": 91.0000000,\n    \"lng\": 29.0000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/courier-location",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courier-location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calculate Total Distance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/courier/courier-1/total-distance",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"courier",
+						"courier-1",
+						"total-distance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
